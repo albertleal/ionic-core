@@ -1,0 +1,14 @@
+<ion-view view-title="{{language.products.list.title}}">
+	<ion-content>
+		<ion-item 
+			class="item item-thumbnail-left"
+			collection-repeat="product in products" 
+			ng-click="navigateToDetail(product.id)">
+			<img ng-src="{{product.imageSquareUrl}} ">
+			<h2 class="calm"></p>{{product.name}}</h2>
+			<h3 class=""></p>{{product.price}}</h3>
+			<br/>
+			<h4 class=""></p>{{product.place}}</h4>
+		</ion-item>
+	</ion-content>
+</ion-view>

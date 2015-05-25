@@ -1,1 +1,18 @@
 /* Empty. Add your own CSS if you like */
+.fullscreen-image {
+  height: 350px;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+}
+.box{
+  min-height: 350px;
+}
+.calm {
+ // color: #7a0090;
+}
+.bar-calm{
+  //background-color: #7a0090 !important;
+}

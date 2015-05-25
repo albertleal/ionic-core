@@ -1,0 +1,49 @@
+<ion-modal-view view-title="{{language.products.new.title}}" ng-controller="AppCtrl">
+  <ion-header-bar class="bar-calm">
+    <div class="buttons">
+      <button class="button button-icon ion-ios7-close-outline" ng-click="closeModal()">Cerrar</button>
+    </div>
+    <h1 class="title">Nuevo deseo</h1>
+    <div class="buttons">
+      <button class="button button-icon ion-ios7-close-outline" ng-click="saveProduct()">Añadir</button>
+    </div>
+  </ion-header-bar>
+  <ion-content scroll="false">
+    <div class="item tabs tabs-secondary tabs-icon-left calm" ng-click="takePicture()">
+      <a class="tab-item" href="#">
+      <i class="icon ion-images"></i>
+      Tengo foto
+    </a>
+      <a class="tab-item" href="#">
+      <i class="icon ion-ios-barcode-outline"></i>
+      Leer código
+    </a>
+      <a class="tab-item" href="#">
+      <i class="icon ion-ios-search"></i>
+      Buscar
+    </a>
+    </div>
+    <ion-scroll  class="list" height="100%">
+       <label class="item item-input item-stacked-label">
+        <span class="input-label">Que quieres comprar?</span>
+        <input type="text" placeholder="Bolso Michael Kors Selma Mandarin">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Cuanto cuesta?</span>
+        <input type="number" placeholder="100.00€">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Donde comprarlo?</span>
+        <input type="text" placeholder="Tienda Diagonal, Barcelona">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Necesito recordar:</span>
+        <textarea placeholder="decidir un tamaño, buscar zapatos a juego" rows="8" cols="10"></textarea>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Enlace:</span>
+        <input type="text" placeholder="http://...">
+      </label>
+      </ion-scroll>
+  </ion-content>
+  </ion-view>

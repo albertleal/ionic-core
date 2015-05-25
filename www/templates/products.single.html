@@ -1,0 +1,29 @@
+<ion-view view-title="{{product.name}}">
+  <ion-content>
+    <div class="list"><!-- list card -->
+      <div class="item">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+          <ion-slide ng-repeat="image in product.imageUrlArray">
+            <div class="box">
+              <img ng-src="{{image}}" class="fullscreen-image">
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+      </div>
+      <div class="item">
+        <h2>{{product.name}}</h2>
+        <h4>{{product.description}}</h4>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-bottom">
+        <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup balanced"></i>
+      {{language.products.single.bought}}
+    </a>
+        <a class="tab-item" href="#">
+      <i class="icon ion-thumbsdown assertive"></i>
+       {{language.products.single.cancel}}
+    </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
